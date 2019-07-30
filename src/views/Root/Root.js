@@ -1,11 +1,11 @@
 import React from 'react';
-import Button from 'components/atoms/Button/Button';
-import GlobalStyle from 'theme/GlobalStyle';
+import MainTemplate from 'templates/mainTemplate';
+
 function Root() {
   return (
-    <div>
-      <GlobalStyle />
-    </div>
+    <MainTemplate>
+      <h1> Hello</h1>
+    </MainTemplate>
   );
 }
 
