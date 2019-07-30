@@ -2,15 +2,16 @@ import React from 'react';
 import Button from './Button';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs';
+import theme from 'theme/mainTheme';
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
   .add('primarry', () => {
     const label = 'Colors';
     const options = {
-      primarry: 'hsl(49, 100%, 58%)',
-      secondary: 'hsl(196, 83%, 75%)',
-      tertiary: 'hsl(106, 47%, 64%)',
+      primarry: theme.darkTheme.lightGradient,
+      secondary: theme.darkTheme.deepDark,
+      tertiary: theme.darkTheme.light,
     };
     const defaultValue = 'hsl(49, 100%, 58%)';
     const groupId = 'GROUP-ID1';
