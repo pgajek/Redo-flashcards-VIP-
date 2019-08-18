@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'theme/GlobalStyle';
-import { theme } from 'theme/mainTheme';
+import theme from 'theme/mainTheme';
 import PropTypes from 'prop-types';
 
 function MainTemplate({ children }) {
