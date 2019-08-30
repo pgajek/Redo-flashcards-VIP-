@@ -1,5 +1,9 @@
 import React from 'react';
-
-const Cards = () => <h1>Cards</h1>;
+import UserPageTemplate from 'templates/UserPageTemplate';
+const Cards = () => (
+  <UserPageTemplate>
+    <h1>Cards</h1>
+  </UserPageTemplate>
+);
 
 export default Cards;

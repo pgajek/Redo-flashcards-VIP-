@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import theme from 'theme/mainTheme';
 const Button = styled.button`
   background: ${({ color }) => color || theme.darkTheme.lightGradient};
-  width: 220px;
+  width: ${({ width }) => (width ? width : '220px')};
   height: 47px;
   border: none;
   border-radius: 50px;

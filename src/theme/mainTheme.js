@@ -13,6 +13,7 @@ const theme = {
     light2: 'hsl(180, 55%, 48%)',
     lightGradient: 'linear-gradient(90deg, hsl(168, 68%, 60%) 0%, hsl(180, 55%, 48%) 100%)',
     text: 'hsl(0,0,0)',
+    activeLink: 'hsla(199, 53%, 24%, 40%)',
   },
   lightTheme: {
     mainDark: 'hsl(199, 53%, 24%)',

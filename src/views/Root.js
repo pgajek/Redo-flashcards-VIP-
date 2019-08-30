@@ -4,21 +4,20 @@ import MainTemplate from 'templates/mainTemplate';
 import Decks from 'views/Decks';
 import Cards from 'views/Cards';
 import Account from 'views/Account';
+import Card from 'components/molecules/Card/Card';
 
 function Root() {
   return (
-    <MainTemplate>
-      <BrowserRouter>
+    <BrowserRouter>
+      <MainTemplate>
         <Switch>
+          {/* <Route exact path="/" component={start} /> */}
           <Route path="/decks" component={Decks} />
           <Route path="/cards" component={Cards} />
-          <Route path="/Account" component={Account} />
+          <Route path="/account" component={Account} />
         </Switch>
-        <h1>Decks</h1>
-        <h1>Cards</h1>
-        <h1>Account</h1>
-      </BrowserRouter>
-    </MainTemplate>
+      </MainTemplate>
+    </BrowserRouter>
   );
 }
 
