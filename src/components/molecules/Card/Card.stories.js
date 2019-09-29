@@ -15,4 +15,4 @@ const Bg = styled.div`
 
 storiesOf('card', module)
   .addDecorator(story => <Bg>{story()}</Bg>)
-  .add('card', () => <Card front="tutu" />);
+  .add('card', () => <Card front="tutu" back="turutu" />);
