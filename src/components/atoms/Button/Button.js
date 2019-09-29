@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import theme from 'theme/mainTheme';
+
 const Button = styled.button`
   background: ${({ color }) => color || theme.darkTheme.lightGradient};
   width: ${({ width }) => (width ? width : '220px')};
@@ -23,7 +24,7 @@ const Button = styled.button`
     `}
 
   &:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.3);
   }
 `;
 
